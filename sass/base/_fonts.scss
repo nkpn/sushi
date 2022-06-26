@@ -1,12 +1,69 @@
-@mixin subheading{
-    font-family: Kaisei Decol;
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 37px;
-    color: $text-primary-color;
+@mixin h1{
+    font-family: Optima;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 30px;
+    color: $white;
 
-    @media screen and (min-width:$tablet) {
-        font-size: 36px;
-        line-height: 48px;
+    @media screen and (min-width:$desktop) {
+        font-size: 60px;
+        line-height: 72px;
     }
+}
+
+@mixin small-text{
+    font-size: 10px;
+    line-height: 18px;
+    font-weight: 500;
+    font-family: Optima;
+    color:$white;
+    text-transform: uppercase;
+    @media screen and (min-width:$desktop) {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@mixin subheading{
+    font-family: Optima;
+    font-size: 24px;
+    line-height: 29px;
+    color: $white;
+    text-transform: uppercase;
+    @media screen and (min-width:$desktop) {
+        font-size: 48px;
+        line-height: 58px;
+    }
+}
+
+@mixin text{
+    font-family: Optima;
+    font-size: 15px;
+    line-height: 18px;
+    color: $white;
+    @media screen and (min-width:$desktop) {
+        font-size:  16px;
+        line-height: 20px;
+    }
+}
+
+@mixin hero-text{
+    font-family: Optima;
+    color:$white;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+    @media screen and (min-width:$desktop) {
+        font-size:  24px;
+        line-height: 29px;
+    }
+}
+
+@mixin navigation{
+    font-family: Optima;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: $white;
+    text-transform: uppercase;
 }

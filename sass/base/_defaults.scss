@@ -41,9 +41,12 @@ a {
 h1,
 h2,
 h3,
+h4,
+h5,
 p {
   margin: 0;
   font-family: inherit;
+  letter-spacing: 0.15em;
 }
 
 li {
@@ -60,14 +63,12 @@ img {
   max-width: 100%;
 }
 
-hr {
-  border-color: $bg-main-color;
-}
+
 
 //* two space between columns
 //* it`s a column in a mobile, a row in a tablet
 
-.two-columns {
+.flex {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
