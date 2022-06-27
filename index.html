@@ -20,8 +20,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     /> -->
-    <!-- <link rel="stylesheet" href="./sass/slick.css" />
-    <link rel="stylesheet" href="./sass/slick-theme.css" /> -->
+    <link rel="stylesheet" href="./sass/slick.css" />
+    <link rel="stylesheet" href="./sass/slick-theme.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="./sass/main.css" />
   </head>
 
@@ -45,22 +49,38 @@
       </div>
       
       <ul class="mobile-header">
-        <li>
-          <img src="./images/logo.svg" alt="AKAI TORI logo" class="mobile-header-logo">
+          <li>
+            <img src="./images/logo.svg" alt="AKAI TORI logo" class="mobile-header-logo">
+          </li>
+          <li class="header-site-name">
+            <h1>AKAI TORI</h1>
+            <h2>Japanese restaurant</h2>
+          </li>
+          <li>
+            <img
+            loading="lazy"
+            src="./images/burger-icon.svg"
+            alt="menu"
+            class="burger"
+          />
         </li>
-        <li class="header-site-name">
-          <h1>AKAI TORI</h1>
-          <h2>Japanese restaurant</h2>
-        </li>
-        <li>
-          <img
-          loading="lazy"
-          src="./images/burger-icon.svg"
-          alt="menu"
-          class="burger"
-        />
-      </li>
       </ul>
+      <div class="mobile-menu animate__animated animate__fadeInDownBig">
+        <div class="img-wrapper">
+          <img
+            loading="lazy"
+            src="./images/close-button.svg"
+            alt="icon close"
+            class="close-btn"
+            width="18"
+          />
+        </div>
+        <ul class="mobile-nav-list">
+          <a href="./" class="mobile-nav-link">HOME</a>
+          <a href="#" class="mobile-nav-link">MENU</a>
+          <a href="#about-us" class="mobile-nav-link">ABOUT US</a>
+        </ul>
+      </div>
     </header>
     <body>
       <section class="hero-section">
@@ -104,25 +124,83 @@
         </div>
       </section>
 
-
-      <section class="opening-soon">
+      <section class="section-our-story">
         <div class="container">
-          <img src="./images/logo.svg" alt="AKAI TORI logo" class="main-logo">
-          <h1>AKAI TORI</h1>
-          <h2>Japanese restaurant</h2>
-          <h3>Opening soon</h3>
-          <p class="new">New</p>
-          <p class="restaurant">Japanese Restaurant</p>
-          <img src="./images/opening-soon.png" alt="Philadelphia">
+          <div class="heading-wrapper">
+            <h3>our awesome story</h3>
+          </div>  
+          <ul class="carousel-list">
+            <li class="carousel-item">
+              <img src="./images/story-template.png" alt="our story">
+              <h4 class="card-heading">SUSHI</h4>
+              <p class="card-description">Japanese food, where the dining experience is not only about the actual food consumed</p>
+            </li>
+            <li class="carousel-item">
+              <img src="./images/story-template.png" alt="our story">
+              <h4 class="card-heading">SUSHI</h4>
+              <p class="card-description">Japanese food, where the dining experience is not only about the actual food consumed</p>
+            </li>
+            <li class="carousel-item">
+              <img src="./images/story-template.png" alt="our story">
+              <h4 class="card-heading">SUSHI</h4>
+              <p class="card-description">Japanese food, where the dining experience is not only about the actual food consumed</p>
+            </li>
+            <li class="carousel-item">
+              <img src="./images/story-template.png" alt="our story">
+              <h4 class="card-heading">SUSHI</h4>
+              <p class="card-description">Japanese food, where the dining experience is not only about the actual food consumed</p>
+            </li>
+            <li class="carousel-item">
+              <img src="./images/story-template.png" alt="our story">
+              <h4 class="card-heading">SUSHI</h4>
+              <p class="card-description">Japanese food, where the dining experience is not only about the actual food consumed</p>
+            </li>
+            <li class="carousel-item">
+              <img src="./images/story-template.png" alt="our story">
+              <h4 class="card-heading">SUSHI</h4>
+              <p class="card-description">Japanese food, where the dining experience is not only about the actual food consumed</p>
+            </li>
+          </ul>
         </div>
+      </section>
+
+      <section class="section-food-carousel">
+        <ul class="food-carousel">
+          <li><img src="./images/carousel-1.png" alt="asian food"></li>
+          <li><img src="./images/carousel-2.png" alt="asian food"></li>
+          <li><img src="./images/carousel-3.png" alt="asian food"></li>
+          <li><img src="./images/carousel-4.png" alt="asian food"></li>
+          <li><img src="./images/carousel-5.png" alt="asian food"></li>
+        </ul>
       </section>
     </body>
     <footer>
+      <div class="container">
+        <div class="flex">
+          <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.89542910652!2d-3.67953665!3d40.4379543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2z0JzQsNC00YDQuNC0LCDQmNGB0L_QsNC90LjRjw!5e0!3m2!1sru!2sua!4v1656354873831!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="contact-information">
+            <a class="social-link" href="https://www.instagram.comh" target="_blank" rel="noreferrer noopener">Instagram</a>
+            <a class="social-link" href="https://www.Facebook.com" target="_blank" rel="noreferrer noopener">Facebook</a>
+            <a class="social-link" href="mailto:google@gmail.com">Mail</a>
+            <a class="social-link" href="tel:+34 881180110">34 881180110</a>
+            <p>Mon-Sun 10.00-20.00</p>
+          </div>
+        </div>
+        <div class="footer-wrapper">
+          <img src="./images/logo.svg" alt="AKAI TORI logo" class="main-logo">
+          <h1>AKAI TORI</h1>
+          <h2>Japanese restaurant</h2>
+        </div>
+        
+      </div>
     </footer>
+  
 
   </head>
     <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
-    <!-- <script src="./js/slick.min.js"></script> -->
+    <script src="./js/slick.min.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

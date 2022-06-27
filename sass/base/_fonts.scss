@@ -36,6 +36,19 @@
     }
 }
 
+@mixin item-heading{
+    font-family: Optima;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media screen and (min-width:$desktop) {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
 @mixin text{
     font-family: Optima;
     font-size: 15px;
@@ -66,4 +79,16 @@
     line-height: 24px;
     color: $white;
     text-transform: uppercase;
+}
+
+@mixin links{
+    font-family: Optima;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    @media screen and (min-width:$desktop) {
+        font-size: 24px;
+        line-height: 29px;
+    }
 }
