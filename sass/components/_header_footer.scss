@@ -31,6 +31,12 @@ header {
         justify-content: flex-end;
         align-items: center;
         flex-direction: row;
+        animation: growDown 200ms ease-in-out forwards;
+
+        a:hover{
+            opacity: 0.8;
+            transition: .3s ease-in-out;
+        }
     }
 }
 
@@ -153,6 +159,11 @@ footer{
 
         a,p{
             @include links();
+
+        &:hover{
+            opacity: 0.8;
+            transition: .3s ease-in-out;
+        }
         }
 
         p{

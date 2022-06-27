@@ -363,6 +363,14 @@ header nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-animation: growDown 200ms ease-in-out forwards;
+          animation: growDown 200ms ease-in-out forwards;
+}
+
+header nav a:hover {
+  opacity: 0.8;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .nav-link {
@@ -566,6 +574,12 @@ footer .contact-information a, footer .contact-information p {
     font-size: 24px;
     line-height: 29px;
   }
+}
+
+footer .contact-information a:hover, footer .contact-information p:hover {
+  opacity: 0.8;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 footer .contact-information p {
