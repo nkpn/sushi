@@ -60,9 +60,13 @@ header {
   }
 
 .main-logo{
-    width: 110px;
+    width: 220px;
     display: block;
     margin: 0 auto;
+
+    @media screen and (min-width: 1024px) {
+        width: 330px;
+      }
 }
 
 .mobile-header{

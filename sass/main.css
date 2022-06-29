@@ -410,9 +410,15 @@ header nav a:hover {
 }
 
 .main-logo {
-  width: 110px;
+  width: 220px;
   display: block;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-logo {
+    width: 330px;
+  }
 }
 
 .mobile-header {
@@ -921,6 +927,18 @@ footer .footer-wrapper h2 {
   max-width: 70%;
 }
 
+@media screen and (max-width: 768px) {
+  .offer-section .list-item:nth-of-type(1) img {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .offer-section .list-item:nth-of-type(3) img {
+    margin-top: 30px;
+  }
+}
+
 .section-take-food {
   background-color: #000000;
 }
@@ -1093,6 +1111,21 @@ footer .footer-wrapper h2 {
   width: 100%;
 }
 
+.card-description {
+  font-family: Optima;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  color: #000000;
+}
+
+@media screen and (min-width: 1024px) {
+  .card-description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
 .section-food-carousel {
   margin-top: 50px;
 }
@@ -1105,6 +1138,7 @@ footer .footer-wrapper h2 {
 
 .food-carousel .slick-slide {
   margin: 0;
+  margin-right: 1px;
 }
 
 .food-carousel li, .food-carousel img {
