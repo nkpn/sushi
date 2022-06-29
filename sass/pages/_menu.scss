@@ -1,0 +1,122 @@
+// Menu section
+
+.menu-section {
+    background-color: $black;
+    padding-top: 100px;
+    padding-bottom: 400px;
+}
+
+
+// Deliver
+
+.deliver {
+    text-align: center;
+    margin-bottom: 110px;
+}
+
+.deliver__heading {
+    @include subheading;
+    margin-bottom: 25px;
+}
+
+.deliver__list {
+    display: flex;
+    justify-content: center;
+}
+
+
+// Filter buttons
+
+.filter {
+    margin-bottom: 110px;
+}
+
+.filter__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -17px;
+}
+
+.filter__item {
+    width: 150px;
+    margin-bottom: 17px;
+
+    &:not(:last-child) {
+        margin-right: 17px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        width: calc((100% - 17px * 4) / 5);
+
+        
+    }
+}
+
+.filter__button {
+    @include filter-button;
+    width: 100%;
+    background: #000000;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    padding: 4px 20px;
+
+    &:hover,
+    &:focus {
+        color: #AA0B4E;
+    }
+}
+
+
+// Product Gallery
+
+.product-gallery__list {
+    
+    @media screen and (min-width:$tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -20px;
+        justify-content: center;
+    }
+}
+
+.product-gallery__item {
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    max-width: 350px;
+    margin-right: auto;
+    margin-left: auto;
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+        @media screen and (min-width:$tablet) {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (min-width:$tablet) {
+        margin: 20px; 
+        width: calc((100% - 4 * 20px) / 2);
+    }
+
+    @media screen and (min-width:1170px) {
+        margin: 20px; 
+        width: calc((100% - 6 * 20px) / 3);
+    }
+}
+
+.product-gallery__thumb {
+    padding: 0px 30px 40px 40px;
+}
+
+.product-gallery__title {
+    @include item-heading;
+    color: $white;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+
+.product-gallery__text {
+    @include navigation;
+    letter-spacing: 0.15em;
+    text-transform: capitalize;
+}
