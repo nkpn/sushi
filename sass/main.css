@@ -86,7 +86,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -261,9 +261,102 @@ summary {
   display: list-item;
 }
 
-.deliver__button, .filter__button {
+.fixed-main-button, .fixed-hided-button, .mobile-deliver-button, .deliver__button, .filter__button {
   border-radius: 10px;
   padding: 7px 20px;
+}
+
+.fixed-main-button:hover, .fixed-hided-button:hover, .mobile-deliver-button:hover, .deliver__button:hover, .filter__button:hover {
+  opacity: 0.8;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.fixed-buttons {
+  position: fixed;
+  right: 10px;
+  bottom: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.hided-buttons {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1220px) {
+  .hided-buttons {
+    right: 3%;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.hided-buttons li {
+  margin-top: 10px;
+}
+
+.fixed-main-button {
+  font-family: Optima;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: Optima;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  background-color: #7F0E36;
+  max-width: 100px;
+}
+
+@media screen and (min-width: 1220px) {
+  .fixed-main-button {
+    font-weight: 700;
+  }
+}
+
+.fixed-hided-button {
+  font-family: Optima;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: Optima;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  background-color: #ffffff;
+  max-width: 100px;
+}
+
+@media screen and (min-width: 1220px) {
+  .fixed-hided-button {
+    font-weight: 700;
+  }
 }
 
 @-webkit-keyframes rotateMenu {
@@ -572,6 +665,59 @@ header nav a:hover {
   }
 }
 
+.mobile-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+
+.mobile-buttons-list {
+  margin-top: 20px;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+
+.mobile-deliver-button {
+  font-family: Optima;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 155px;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1220px) {
+  .mobile-deliver-button {
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  .mobile-deliver-button {
+    width: 181px;
+  }
+}
+
 .main-logo {
   width: 220px;
   display: block;
@@ -662,6 +808,10 @@ header nav a:hover {
   overflow: auto;
 }
 
+.mobile-menu .contact-information {
+  margin-top: 35px;
+}
+
 .active {
   display: block;
 }
@@ -686,9 +836,9 @@ footer {
 
 footer .flex {
   margin-top: 53px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -722,9 +872,7 @@ footer .contact-information {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 160px;
   text-align: center;
-  text-transform: capitalize;
 }
 
 @media screen and (max-width: 768px) {
@@ -754,14 +902,55 @@ footer .contact-information a:hover, footer .contact-information p:hover {
   transition: .3s ease-in-out;
 }
 
-footer .contact-information p {
-  margin-top: 20px;
+footer .contact-information .socials-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 19px;
+  margin-bottom: 21px;
+}
+
+footer .contact-information .contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+footer .contact-information .contact-text {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+footer .contact-information .contact-text:first-of-type {
+  margin-top: 25px;
 }
 
 @media screen and (min-width: 768px) {
-  footer .contact-information p {
-    margin-top: 30px;
+  footer .contact-information .contact-text:first-of-type {
+    margin-top: 35px;
   }
+}
+
+footer .contact-information .contact-link:hover,
+footer .contact-information .contact-text:hover {
+  opacity: 0.8;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 footer .social-link:nth-of-type(3) {
@@ -779,7 +968,7 @@ footer .social-link__icon {
 }
 
 footer .footer-wrapper {
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 50px;
 }
 
@@ -1199,13 +1388,24 @@ footer .footer-wrapper h2 {
   margin-top: 15px;
   padding: 5px 10px;
   border: 1px solid #ffffff;
-  max-width: 120px;
   text-align: center;
   color: #ffffff;
 }
 
+.section-take-food .take-any-food .deliver__button {
+  color: #000000;
+}
+
+.section-take-food .take-any-food .deliver__list > li {
+  margin: 0 auto;
+}
+
 .section-our-story {
   background-color: #ffffff;
+}
+
+.section-our-story .container {
+  position: relative;
 }
 
 .section-our-story h3 {
@@ -1281,6 +1481,32 @@ footer .footer-wrapper h2 {
   width: 100%;
 }
 
+.carousel-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: 18%;
+  right: 0;
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 1220px) {
+  .carousel-buttons {
+    padding-right: 0;
+    right: -3px;
+  }
+}
+
+.carousel-buttons img {
+  cursor: pointer;
+}
+
 .card-description {
   font-family: Optima;
   font-size: 15px;
@@ -1353,6 +1579,7 @@ footer .footer-wrapper h2 {
 }
 
 .deliver__list {
+  margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1363,6 +1590,9 @@ footer .footer-wrapper h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 12px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1371,14 +1601,19 @@ footer .footer-wrapper h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-top: 25px;
   }
+}
+
+.deliver__item {
+  margin: 0 auto;
 }
 
 .deliver__item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1220px) {
   .deliver__item:not(:last-child) {
     margin-bottom: 0;
     margin-right: 20px;
@@ -1401,8 +1636,6 @@ footer .footer-wrapper h2 {
 
 @media screen and (min-width: 1220px) {
   .deliver__button {
-    font-size: 32px;
-    line-height: 39px;
     font-weight: 700;
   }
 }
@@ -1463,8 +1696,6 @@ footer .footer-wrapper h2 {
 
 @media screen and (min-width: 1220px) {
   .filter__button {
-    font-size: 32px;
-    line-height: 39px;
     font-weight: 700;
   }
 }

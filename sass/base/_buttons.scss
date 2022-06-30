@@ -4,5 +4,67 @@
     @media screen and (min-width:$desktop) {
     }
 
+    &:hover{
+        opacity: 0.8;
+        transition: .3s ease-in-out
+    }
+}
+
+
+//-------- fixed buttons
+.fixed-buttons{
+    position: fixed;
+    right: 10px;
+    bottom: 5%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.hided-buttons{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 5px;
+    @media screen and (min-width:$desktop) {
+        right: 3%;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    li{
+        margin-top: 10px;
+    }
+}
+
+.fixed-main-button{
+    @include filter-button-text();
+    @extend %filter-button;
+    font-family: Optima;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: $white;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
     
+    background-color: $red;
+    max-width: 100px;
+}
+
+.fixed-hided-button{
+    @include filter-button-text();
+    @extend %filter-button;
+    font-family: Optima;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: $black;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    
+    background-color: $white;
+    max-width: 100px;
+    // display: none;
 }

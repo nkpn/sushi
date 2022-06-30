@@ -17,6 +17,9 @@ $(document).ready(function () {
     speed: 600,
     autoplay: true,
     autoplaySpeed: 3000,
+    appendArrows: $(".carousel-buttons"),
+    prevArrow: $(".slider-left"),
+    nextArrow: $(".slider-right"),
     responsive: [
       {
         breakpoint: 728,
@@ -68,8 +71,24 @@ $(document).ready(function () {
 
 });
 
+function fixedOrderButtons(){
+  const orderButton = $('.fixed-main-button');
+  const hidedList = $('.hided-buttons');
 
 
+  function slideDown(){
+    console.log(hidedList)
+    if (hidedList){
+      $(hidedList).slideDown('slow');
+    }
+  }
+
+  if (orderButton){
+    orderButton.on('click', slideDown)
+  }
+}
+
+fixedOrderButtons()
 //---------------------------------------
 //* Scroll Reveal
 // ScrollReveal().reveal('img');

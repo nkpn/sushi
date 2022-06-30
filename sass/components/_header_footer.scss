@@ -57,7 +57,39 @@ header {
     @media screen and (min-width: 1023px) {
       display: none;
     }
-  }
+
+
+}
+
+
+.mobile-nav-list{
+    display: flex;   
+    flex-direction: column;
+    gap: 25px;
+}
+
+.mobile-buttons-list{
+    margin-top: 20px;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 12px;
+}
+
+.mobile-deliver-button{
+    @include filter-button-text;
+    @extend %filter-button;
+    width: 155px;
+    background-color: $white;
+
+    color: $black;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    @media screen and (min-width:$desktop) {
+        width: 181px;
+    }
+}
 
 .main-logo{
     width: 220px;
@@ -116,6 +148,10 @@ header {
     // transform-origin: top center;
     animation-duration: 250ms;
     overflow: auto;
+
+    .contact-information{
+        margin-top: 35px;
+    }
   }
 
   .active {
@@ -134,14 +170,13 @@ header {
 
   
 // Footer
-
 footer{
     background-color: $black;
     border-top: 1px solid $white;
 
     .flex{
         margin-top: 53px;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
 
         @media screen and (min-width: $tablet) {
@@ -162,9 +197,8 @@ footer{
         color:$white;
         display: flex;
         flex-direction: column;
-        max-width: 160px;
         text-align: center;
-        text-transform: capitalize;
+        // text-transform: capitalize;
         @media screen and (max-width: $tablet) {
             margin-top: 32px;
         }
@@ -178,11 +212,38 @@ footer{
         }
         }
 
-        p{
-            margin-top: 20px;
-            @media screen and (min-width: $tablet) {
-                margin-top: 30px;
+        .socials-list{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 19px;
+            margin-bottom: 21px;
+        }
+
+        .contact-list{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .contact-text{
+            text-align: center;
+            margin-bottom: 8px;
+
+            &:first-of-type{
+                margin-top: 25px;
+
+                @media screen and (min-width: $tablet) {
+                    margin-top: 35px;
+                }
             }
+        }
+
+        .contact-link:hover,
+        .contact-text:hover{
+            opacity: 0.8;
+            transition: .3s ease-in-out;
         }
     }
 
@@ -202,7 +263,7 @@ footer{
 
 
     .footer-wrapper{
-        padding-top: 40px;
+        padding-top: 30px;
         padding-bottom: 50px;
         @media screen and (min-width: $tablet) {
             padding-top: 80px;
