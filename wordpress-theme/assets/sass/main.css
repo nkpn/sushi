@@ -86,7 +86,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -598,14 +598,12 @@ footer .contact-information p {
   }
 }
 
-footer .social-link:nth-of-type(3) {
-  margin-top: 20px;
+footer .contact-information .socials-list {
+  margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
-  footer .social-link:nth-of-type(3) {
-    margin-top: 30px;
-  }
+footer .contact-information .contact-list {
+  margin-top: 20px;
 }
 
 footer .footer-wrapper {

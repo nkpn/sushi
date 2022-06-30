@@ -176,14 +176,27 @@ footer{
                 margin-top: 30px;
             }
         }
-    }
 
-    .social-link:nth-of-type(3){
-        margin-top: 20px;
-        @media screen and (min-width: $tablet) {
-            margin-top: 30px;
+        .socials-list {
+            margin-bottom: 20px;
+        }
+    
+        .contact-list {
+            margin-top: 20px;
         }
     }
+
+
+    // .social-link__list {
+    //     margin-bottom: 20px;
+    // }
+
+    // .social-link:nth-of-type(3){
+    //     margin-top: 20px;
+    //     @media screen and (min-width: $tablet) {
+    //         margin-top: 30px;
+    //     }
+    // }
 
     .footer-wrapper{
         padding-top: 40px;
