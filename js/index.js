@@ -71,42 +71,14 @@ $(document).ready(function () {
 
 });
 
-// function fixedOrderButtons(){
-//   const orderButton = $('.fixed-main-button');
-//   const hidedList = $('.hided-buttons');
-
-
-//   function slideDown(){
-//     if (hidedList){
-//       $(hidedList).slideDown('slow');
-//         orderButton.addClass('is-active');
-//       }
-//     }
-
-//   function slideUp(){
-//     if(orderButton){
-//       if (orderButton.hasClass('is-active')){
-//           $(hidedList).slideUp('slow')
-//       }
-//     }
-//   }
-
-//   if (orderButton){
-//     orderButton.on('click', slideDown)
-
-//     if (orderButton.hasClass('is-active')){
-//         orderButton.on('click', slideUp)
-//     }
-//   }
-// }
-
-// fixedOrderButtons()
+//* Fixed buttons
 const orderButton = $('.fixed-main-button');
   const hidedList = $('.hided-buttons');
 
-  orderButton.click(()=>{
-    hidedList.toggle();
-  })
+orderButton.click(()=>{
+  hidedList.toggle();
+})
+
 
 //---------------------------------------
 //* Scroll Reveal

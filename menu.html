@@ -109,25 +109,25 @@
             <div class="filter">
               <ul class="filter__list">
                 <li class="filter__item">
-                  <button type="button" class="filter__button">Starter</button>
+                  <button type="button" class="filter__button" data-filter='all'>Starter</button>
                 </li>
                 <li class="filter__item">
-                  <button type="button" class="filter__button">Rolls</button>
+                  <button type="button" class="filter__button" data-filter="rolls">Rolls</button>
                 </li>
                 <li class="filter__item">
-                  <button type="button" class="filter__button">Nigiri</button>
+                  <button type="button" class="filter__button" data-filter="nigiri">Nigiri</button>
                 </li>
                 <li class="filter__item">
-                  <button type="button" class="filter__button">Soups</button>
+                  <button type="button" class="filter__button" data-filter="soups">Soups</button>
                 </li>
                 <li class="filter__item">
-                  <button type="button" class="filter__button">Kids</button>
+                  <button type="button" class="filter__button" data-filter="kids">Kids</button>
                 </li>
               </ul>
             </div>
             <div class="product-gallery">
               <ul class="product-gallery__list">
-                <li class="product-gallery__item">
+                <li class="product-gallery__item rolls">
                   <div class="product-gallery__overlay">
                     <img
                       class="product-gallery__image"
@@ -144,7 +144,7 @@
                     <p class="product-gallery__text">Nori, rice, salmon, cucumber, avocado, sesami seeds, japanese mayonnaise, caviar</p>
                   </div>
                 </li>
-                <li class="product-gallery__item">
+                <li class="product-gallery__item rolls">
                   <div class="product-gallery__overlay">
                     <img
                       class="product-gallery__image"
@@ -161,7 +161,7 @@
                     <p class="product-gallery__text">Nori, rise, salmon, cucamber, avocado,sesami seeds, cream cheese, caviar, unagi souce</p>
                   </div>
                 </li>
-                <li class="product-gallery__item">
+                <li class="product-gallery__item nigiri">
                   <div class="product-gallery__overlay">
                     <img
                       class="product-gallery__image"
@@ -178,7 +178,7 @@
                     <p class="product-gallery__text">Nori, rise, salmon, cucamber, avocado, sesami seeds, cream cheese, caviar, unagi souce</p>
                   </div>
                 </li>
-                <li class="product-gallery__item">
+                <li class="product-gallery__item nigiri">
                   <div class="product-gallery__overlay">
                     <img
                       class="product-gallery__image"
@@ -195,7 +195,7 @@
                     <p class="product-gallery__text">Nori, rice, salmon, cucumber, avocado, sesami seeds, japanese mayonnaise, caviar</p>
                   </div>
                 </li>
-                <li class="product-gallery__item">
+                <li class="product-gallery__item nigiri">
                   <div class="product-gallery__overlay">
                     <img
                       class="product-gallery__image"
@@ -212,7 +212,7 @@
                     <p class="product-gallery__text">Nori, rise, salmon, cucamber, avocado,sesami seeds, cream cheese, caviar, unagi souce</p>
                   </div>
                 </li>
-                <li class="product-gallery__item">
+                <li class="product-gallery__item soups">
                   <div class="product-gallery__overlay">
                     <img
                       class="product-gallery__image"
@@ -229,7 +229,7 @@
                     <p class="product-gallery__text">Nori, rise, salmon, cucamber, avocado, sesami seeds, cream cheese, caviar, unagi souce</p>
                   </div>
                 </li>
-                <li class="product-gallery__item">
+                <li class="product-gallery__item soups">
                   <div class="product-gallery__overlay">
                     <img
                       class="product-gallery__image"
@@ -246,7 +246,7 @@
                     <p class="product-gallery__text">Nori, rice, salmon, cucumber, avocado, sesami seeds, japanese mayonnaise, caviar</p>
                   </div>
                 </li>
-                <li class="product-gallery__item">
+                <li class="product-gallery__item soups">
                   <div class="product-gallery__overlay">
                     <img
                       class="product-gallery__image"
@@ -263,7 +263,7 @@
                     <p class="product-gallery__text">Nori, rise, salmon, cucamber, avocado,sesami seeds, cream cheese, caviar, unagi souce</p>
                   </div>
                 </li>
-                <li class="product-gallery__item">
+                <li class="product-gallery__item soups">
                   <div class="product-gallery__overlay">
                     <img
                       class="product-gallery__image"
@@ -280,7 +280,7 @@
                     <p class="product-gallery__text">Nori, rise, salmon, cucamber, avocado, sesami seeds, cream cheese, caviar, unagi souce</p>
                   </div>
                 </li>
-                <li class="product-gallery__item">
+                <li class="product-gallery__item kids">
                   <div class="product-gallery__overlay">
                     <img
                       class="product-gallery__image"
@@ -297,7 +297,7 @@
                     <p class="product-gallery__text">Nori, rice, salmon, cucumber, avocado, sesami seeds, japanese mayonnaise, caviar</p>
                   </div>
                 </li>
-                <li class="product-gallery__item">
+                <li class="product-gallery__item kids">
                   <div class="product-gallery__overlay">
                     <img
                       class="product-gallery__image"
@@ -314,7 +314,7 @@
                     <p class="product-gallery__text">Nori, rise, salmon, cucamber, avocado,sesami seeds, cream cheese, caviar, unagi souce</p>
                   </div>
                 </li>
-                <li class="product-gallery__item">
+                <li class="product-gallery__item kids">
                   <div class="product-gallery__overlay">
                     <img
                       class="product-gallery__image"
@@ -385,5 +385,6 @@
     <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/filtration.js"></script>
   </body>
 </html>
