@@ -68,11 +68,22 @@ header {
     gap: 25px;
 }
 
+.mobile-nav-link{
+    @include navigation();
+}
+
+.mobile-text{
+    margin-top: 35px;
+    margin-bottom: 20px;
+    @include text();
+}
+
 .mobile-buttons-list{
     margin-top: 20px;
     flex-direction: unset;
     flex-wrap: wrap;
     display: flex;
+    justify-content: center;
     gap: 12px;
 }
 
@@ -134,7 +145,7 @@ header {
 }
 
 .mobile-menu {
-    padding: 35px 20px 20px 40px;
+    padding: 35px 20px 20px 20px;
     display: none;
     position: fixed;
     height: 110vh;
@@ -193,73 +204,7 @@ footer{
     }
 
 
-    .contact-information{
-        color:$white;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        // text-transform: capitalize;
-        @media screen and (max-width: $tablet) {
-            margin-top: 32px;
-        }
-
-        a,p{
-            @include links();
-
-        &:hover{
-            opacity: 0.8;
-            transition: .3s ease-in-out;
-        }
-        }
-
-        .socials-list{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 19px;
-            margin-bottom: 21px;
-        }
-
-        .contact-list{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .contact-text{
-            text-align: center;
-            margin-bottom: 8px;
-
-            &:first-of-type{
-                margin-top: 25px;
-
-                @media screen and (min-width: $tablet) {
-                    margin-top: 35px;
-                }
-            }
-        }
-
-        .contact-link:hover,
-        .contact-text:hover{
-            opacity: 0.8;
-            transition: .3s ease-in-out;
-        }
-    }
-
-    .social-link {
-
-        &:nth-of-type(3){
-            margin-top: 20px;
-            @media screen and (min-width: $tablet) {
-                margin-top: 30px;
-            }
-        }
-
-        &__icon {
-            fill: $white;
-        }
-    }
+    
 
 
     .footer-wrapper{
@@ -284,5 +229,73 @@ footer{
             text-align: center;
             font-size: 8px;
           }
+    }
+}
+
+.contact-information{
+    color:$white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    // text-transform: capitalize;
+    @media screen and (max-width: $tablet) {
+        margin-top: 32px;
+    }
+
+    a,p{
+        @include links();
+
+    &:hover{
+        opacity: 0.8;
+        transition: .3s ease-in-out;
+    }
+    }
+
+    .socials-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 19px;
+        margin-bottom: 21px;
+    }
+
+    .contact-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .contact-text{
+        text-align: center;
+        margin-bottom: 8px;
+
+        &:first-of-type{
+            margin-top: 25px;
+
+            @media screen and (min-width: $tablet) {
+                margin-top: 35px;
+            }
+        }
+    }
+
+    .contact-link:hover,
+    .contact-text:hover{
+        opacity: 0.8;
+        transition: .3s ease-in-out;
+    }
+}
+
+.social-link {
+
+    &:nth-of-type(3){
+        margin-top: 20px;
+        @media screen and (min-width: $tablet) {
+            margin-top: 30px;
+        }
+    }
+
+    &__icon {
+        fill: $white;
     }
 }
