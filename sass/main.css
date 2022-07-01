@@ -285,6 +285,10 @@ summary {
           flex-direction: column-reverse;
 }
 
+.fixed-buttons a {
+  cursor: pointer;
+}
+
 .hided-buttons {
   display: none;
   -webkit-box-orient: vertical;

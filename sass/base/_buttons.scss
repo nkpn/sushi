@@ -18,6 +18,10 @@
     bottom: 5%;
     display: flex;
     flex-direction: column-reverse;
+
+    a{
+        cursor: pointer;
+    }
 }
 
 .hided-buttons{
