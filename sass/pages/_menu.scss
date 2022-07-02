@@ -183,15 +183,9 @@
 }
 
 .product-gallery__text {
-    @include navigation;
     letter-spacing: 0.15em;
     text-transform: capitalize;
-    font-size: 15px;
-    line-height: 18px;  
-    @media screen and (min-width:$desktop) {
-        font-size: 20px;
-        line-height: 24px;
-    }
+    @include text();
 }
 
 .product-gallery__image {

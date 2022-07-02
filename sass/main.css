@@ -1814,22 +1814,18 @@ footer .footer-wrapper h2 {
 }
 
 .product-gallery__text {
-  font-family: Optima;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: #ffffff;
-  text-transform: uppercase;
   letter-spacing: 0.15em;
   text-transform: capitalize;
+  font-family: Optima;
   font-size: 15px;
   line-height: 18px;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 1220px) {
   .product-gallery__text {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
