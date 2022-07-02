@@ -57,15 +57,14 @@
 .deliver__button {
     @include filter-button-text;
     @extend %filter-button;
-    width: 155px;
+    max-width: 155px;
     background-color: $white;
 
     color: $black;
     font-weight: 700;
 
     @media screen and (min-width:$desktop) {
-        width: 181px;
-        
+        max-width: 195px; 
     }
 }
 
@@ -167,6 +166,11 @@
     }
 }
 
+.product-gallery__overlay{
+    overflow: hidden;
+    border-radius: 5px;
+}
+
 .product-gallery__thumb {
     padding: 0px 30px 40px 40px;
 }
@@ -182,6 +186,12 @@
     @include navigation;
     letter-spacing: 0.15em;
     text-transform: capitalize;
+    font-size: 15px;
+    line-height: 18px;  
+    @media screen and (min-width:$desktop) {
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
 
 .product-gallery__image {

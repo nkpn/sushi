@@ -1665,7 +1665,7 @@ footer .footer-wrapper h2 {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: #ffffff;
-  width: 155px;
+  max-width: 155px;
   background-color: #ffffff;
   color: #000000;
   font-weight: 700;
@@ -1679,7 +1679,7 @@ footer .footer-wrapper h2 {
 
 @media screen and (min-width: 1220px) {
   .deliver__button {
-    width: 181px;
+    max-width: 195px;
   }
 }
 
@@ -1786,6 +1786,11 @@ footer .footer-wrapper h2 {
   }
 }
 
+.product-gallery__overlay {
+  overflow: hidden;
+  border-radius: 5px;
+}
+
 .product-gallery__thumb {
   padding: 0px 30px 40px 40px;
 }
@@ -1817,6 +1822,15 @@ footer .footer-wrapper h2 {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   text-transform: capitalize;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+@media screen and (min-width: 1220px) {
+  .product-gallery__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .product-gallery__image {
